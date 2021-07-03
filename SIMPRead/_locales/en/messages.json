@@ -1,0 +1,95 @@
+{
+    "ExtensionDescription": {
+        "description": "extension description",
+        "message": "SIMPRead | Extension based on TextSUM model and piggyreader for better browsing experience"
+    },
+    "ExtensionName": {
+        "description": "extension name",
+        "message": "SIMPRead"
+    },
+    "ExtensionShortName": {
+        "description": "extension short name",
+        "message": "v"
+    },
+    "BrowserActionTitle": {
+        "description": "extension name",
+        "message": "SIMPRead"
+    },
+    "Pagination": {
+        "description": "pagination",
+        "message": "Page $1"
+    },
+    "JiZhuReaderOption": {
+        "description": "title",
+        "message": "SIMPRead Options"
+    },
+    "Option": {
+        "description": "option",
+        "message": "Options"
+    },
+    "ReaderFontSize": {
+        "description": "reader fontsize",
+        "message": "Font Size"
+    },
+    "Copyright": {
+        "description": "piggy reader",
+        "message": "©2021 jhong/yzlin | ©2013-2016 Piggy Reader"
+    },
+    "Goback": {
+        "message": "Back(Esc)"
+    },
+    "Edit": {
+        "message": "Edit"
+    },
+    "SaveNote": {
+        "message": "Save as Note"
+    },
+    "Save": {
+        "message": "Save"
+    },
+    "Print": {
+        "message": "Print"
+    },
+    "Help": {
+        "message": "Help"
+    },
+    "HelpModalTitle": {
+        "message": "Piggy Reader"
+    },
+    "HelpModalTip": {
+        "message": "Thank you for participating in SIMPRead Demo! Remember to open the data server in advance~ <br />If you wants more to contact, please email me with <a href=\"mailto:tommyix@163.com\" target=\"_blank\" class=\"jz-mailto-link\"></a>, thank you."
+    },
+    "ClipFailedTip": {
+        "message": "<div class=\"jz-clipfailed-tip\">Sorry, but no content has been found</div>"
+    },
+    "LoadingTip": {
+        "message": "<div class=\"jz-loading-tip\">Loading content...</div>"
+    },
+    "GeneralOption": {
+        "message": "General Options"
+    },
+    "DictOption": {
+        "message": "Lookup phrase"
+    },
+    "DictHostpage": {
+        "message": "Host Page"
+    },
+    "DictJzPage": {
+        "message": "Reader Page"
+    },
+    "DictSelection": {
+        "message": "Mouse Select/Click"
+    },
+    "DictMouse": {
+        "message": "Mouse Hover"
+    },
+    "OptionSavedTip": {
+        "message": "Option saved, please refresh the opened page."
+    },
+    "Disabled": {
+        "message": "Disabled"
+    },
+    "TranslateWord": {
+        "message": "Translate selected words"
+    }
+}

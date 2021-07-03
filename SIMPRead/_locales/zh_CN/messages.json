@@ -1,0 +1,98 @@
+{
+    "ExtensionDescription": {
+        "description": "extension description",
+        "message": "易读 | 基于文本摘要模型与piggyreader开发的网页内容过滤阅读器"
+    },
+    "ExtensionName": {
+        "description": "extension name",
+        "message": "易读"
+    },
+    "ExtensionShortName": {
+        "description": "extension short name",
+        "message": "阅读器"
+    },
+    "BrowserActionTitle": {
+        "description": "extension name",
+        "message": "易读"
+    },
+    "Pagination": {
+        "description": "pagination",
+        "message": "第 $1 页"
+    },
+    "JiZhuReaderOption": {
+        "description": "title",
+        "message": "易读选项"
+    },
+    "Option": {
+        "description": "option",
+        "message": "选项"
+    },
+    "ReaderFontSize": {
+        "description": "reader fontsize",
+        "message": "阅读字体大小"
+    },
+    "Copyright": {
+        "description": "piggy reader",
+        "message": "©2021 王锦宏/叶泽林 | ©2013-2020 饥猪阅读"
+    },
+    "Goback": {
+        "message": "返回(Esc)"
+    },
+    "Edit": {
+        "message": "编辑"
+    },
+    "SaveNote": {
+        "message": "保存为笔记"
+    },
+    "CannotSaveBlankNote": {
+        "message": "不能保存空笔记"
+    },
+    "IsSavingNote": {
+        "message": "正在保存空笔记..."
+    },
+    "Save": {
+        "message": "保存"
+    },
+    "Print": {
+        "message": "打印"
+    },
+    "Help": {
+        "message": "帮助"
+    },
+    "HelpModalTip": {
+        "message": "感谢您评鉴简阅Demo！请确保服务端在本地运行<br />如果您希望与我进一步交流，请发送邮件到：<a href=\"mailto:tommyix@163.com\" target=\"_blank\" class=\"jz-highlight-link\"></a>，谢谢。"
+    },
+    "ClipFailedTip": {
+        "message": "<div class=\"jz-clipfailed-tip\">抱歉，没有找到有效的网页正文</div>"
+    },
+    "LoadingTip": {
+        "message": "<div class=\"jz-loading-tip\">正在请求内容，请稍候...</div>"
+    },
+    "GeneralOption": {
+        "message": "通用选项"
+    },
+    "DictOption": {
+        "message": "查询选项"
+    },
+    "DictHostpage": {
+        "message": "原始页面"
+    },
+    "DictJzPage": {
+        "message": "阅读页面"
+    },
+    "DictSelection": {
+        "message": "划词/单击"
+    },
+    "DictMouse": {
+        "message": "鼠标悬停"
+    },
+    "OptionSavedTip": {
+        "message": "选项已保存，请刷新已打开的页面"
+    },
+    "Disabled": {
+        "message": "禁用"
+    },
+    "TranslateWord": {
+        "message": "翻译选中单词"
+    }
+}
