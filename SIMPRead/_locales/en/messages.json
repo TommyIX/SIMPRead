@@ -32,7 +32,7 @@
         "message": "Font Size"
     },
     "Copyright": {
-        "description": "piggy reader",
+        "description": "SIMPRead based on piggyreader",
         "message": "©2021 jhong/yzlin | ©2013-2016 Piggy Reader"
     },
     "Goback": {
@@ -54,10 +54,10 @@
         "message": "Help"
     },
     "HelpModalTitle": {
-        "message": "Piggy Reader"
+        "message": "SIMPRead"
     },
     "HelpModalTip": {
-        "message": "Thank you for participating in SIMPRead Demo! Remember to open the data server in advance~ <br />If you wants more to contact, please email me with <a href=\"mailto:tommyix@163.com\" target=\"_blank\" class=\"jz-mailto-link\"></a>, thank you."
+        "message": "Thank you for participating in the evaluation of SIMPRead Demo! Remember to launch the local data server in advance~! <br />If you want more contact, please email me with <a href=\"mailto:tommyix@163.com\" target=\"_blank\" class=\"jz-mailto-link\">tommyix@163.com</a>, thank you."
     },
     "ClipFailedTip": {
         "message": "<div class=\"jz-clipfailed-tip\">Sorry, but no content has been found</div>"
@@ -91,5 +91,8 @@
     },
     "TranslateWord": {
         "message": "Translate selected words"
+    },
+    "SIMPtitle":{
+        "message": "SIMPRead Version | "
     }
 }

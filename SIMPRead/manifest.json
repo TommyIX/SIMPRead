@@ -19,6 +19,7 @@
         "js/lib/string.levenshtein.js",
         "js/lib/extract-content.js",
         "js/lib/jps.js",
+        "js/lib/jquery.js",
         "js/module.common.shell.js",
         "js/module.dictlayer.js",
         "js/module.masklayer.js",

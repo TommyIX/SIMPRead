@@ -32,7 +32,7 @@
         "message": "阅读字体大小"
     },
     "Copyright": {
-        "description": "piggy reader",
+        "description": "SIMPRead based on piggy reader",
         "message": "©2021 王锦宏/叶泽林 | ©2013-2020 饥猪阅读"
     },
     "Goback": {
@@ -60,7 +60,7 @@
         "message": "帮助"
     },
     "HelpModalTip": {
-        "message": "感谢您评鉴简阅Demo！请确保服务端在本地运行<br />如果您希望与我进一步交流，请发送邮件到：<a href=\"mailto:tommyix@163.com\" target=\"_blank\" class=\"jz-highlight-link\"></a>，谢谢。"
+        "message": "感谢您评鉴易读Demo！请确保服务端已经在本地运行<br />如果您希望与我进一步交流，请发送邮件到：<a href=\"mailto:tommyix@163.com\" target=\"_blank\" class=\"jz-highlight-link\">tommyix@163.com</a>，谢谢。"
     },
     "ClipFailedTip": {
         "message": "<div class=\"jz-clipfailed-tip\">抱歉，没有找到有效的网页正文</div>"
@@ -94,5 +94,8 @@
     },
     "TranslateWord": {
         "message": "翻译选中单词"
+    },
+    "SIMPtitle":{
+        "message": "易读 | 简化版: "
     }
 }
