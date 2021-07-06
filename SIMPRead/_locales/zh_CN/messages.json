@@ -97,5 +97,8 @@
     },
     "SIMPtitle":{
         "message": "易读 | 简化版: "
+    },
+    "SIMPFailed":{
+        "message": "出现错误 | 简化失败"
     }
 }

@@ -94,5 +94,8 @@
     },
     "SIMPtitle":{
         "message": "SIMPRead Version | "
+    },
+    "SIMPFailed":{
+        "message": "An error occurred while simplifying"
     }
 }

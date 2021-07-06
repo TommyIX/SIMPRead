@@ -168,7 +168,6 @@
       var self = this
       var orititle = self.jzTitle[0].outerText
       var tosimp = self.jzArticle[0].outerText
-      // console.log(tosimp)
 
       $.ajax({
         type:'POST',
@@ -178,7 +177,7 @@
           self.showModal(data.result,chrome.i18n.getMessage("SIMPtitle")+orititle)
         },
         error: function(error){
-            self.showModal(error, "ERROR: Simplication Process Failed")
+            self.showModal(error, chrome.i18n.getMessage("SIMPFailed"))
         }
       })
     },
