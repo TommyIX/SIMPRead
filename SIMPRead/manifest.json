@@ -152,7 +152,7 @@
     "unlimitedStorage",
     "storage"
   ],
-  "version": "1.8.7",
+  "version": "1.0.0",
   "web_accessible_resources": [
     "reader.html",
     "css/images/logo.png"

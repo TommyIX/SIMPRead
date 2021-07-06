@@ -118,26 +118,27 @@ def cleanoutput(prediction):
     return changestarttoupper(strtoreturn)
 
 
-# device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
-# print("正在加载模型...\nLoading TextSUM model to Device: ", device)
-# article,summary,model = load_best_model(device,model_path = model_path ,store_dict="./data")
-# print("模型加载成功！ The model is successfully initted!")
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+print("正在加载模型...\nLoading TextSUM model to Device: ", device)
+article,summary,model = load_best_model(device,model_path = model_path ,store_dict="./data")
+print("模型加载成功！ The model is successfully initted!")
 
+@app.route("/")
+def index():
+    return flask.render_template('index.html')
 
-@app.route("/predict", methods=["GET","POST"])
+@app.route("/predict", methods=["POST"])
 def predicttext():
-    successfully_handled = False
-    string = ""
-    try:
-        string = flask.request.values['string']
-    except:
-        pass
-    print("Received:", string)
-    return "theblyatis:"+string
-    # text_tokenized = spacy_tokenizer(text)
-    # prediction, _ = predict(text_tokenized, article, summary, model, device)
-    # return cleanoutput(prediction)
+    tosimp = flask.request.form.get('str')
+    simpans = ""
+    simpsentences = tosimp.split('\n')
+    nowsimp = []
+    for i in simpsentences:
+        nowsimp += spacy_tokenizer(i)
+        if len(nowsimp) > 75:
+            prediction, _ = predict(nowsimp, article, summary, model, device)
+            simpans+=cleanoutput(prediction)+"<br>\n"
+            nowsimp = []
+    return flask.jsonify({"result":simpans})
 
-app.run(host='0.0.0.0',#任何ip都可以访问
-        port=8999,#端口
-        debug=True)
+app.run(host='0.0.0.0',port=8999)

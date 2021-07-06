@@ -158,7 +158,7 @@
         self.jzContentWrap.attr('contenteditable', 'false').blur()
         $('#jz-editbtn').attr('title', chrome.i18n.getMessage("Edit"))
       } else {
-        alert("编辑模式已开启！现在你可以对这里的文本进行修改啦，修改后，简化结果也会发生变化。")
+        alert("编辑模式已开启，现在你可以对阅读器中的文本自由的进行修改了，修改后，简化结果也会发生变化。")
         self.jzContentWrap.attr('contenteditable', 'true').focus()
         $('#jz-editbtn').attr('title', chrome.i18n.getMessage("Save"))
       }
@@ -167,36 +167,20 @@
     showSimplifiedContent: function() {
       var self = this
       var orititle = self.jzTitle[0].outerText
-      var tosimp = ""
-      for (var i = 0; i < self.jzArticle.length; i++) {
-        tosimp += self.jzArticle[i].outerText
-      }
+      var tosimp = self.jzArticle[0].outerText
       // console.log(tosimp)
 
-      var data = {
-        'string': 'MaLiang have no jb!'
-      };
-
-      // $.ajax({
-      //   type:'GET',
-      //   url:'127.0.0.1:8999/predict',
-      //   data: data,
-      //   dataType:'json',
-      //   success: function (data) {
-      //       if(data.state>=0){
-      //           console.log(data);
-      //           self.showModal(data,chrome.i18n.getMessage("SIMPtitle")+orititle)
-      //       }
-      //   },
-      //   error: function(){
-      //       console.log("failure!");
-      //       self.showModal("Failed to communicate with server!",chrome.i18n.getMessage("SIMPtitle")+orititle)
-      //   }
-      // })
-      $.get($.get('localhost:8999/predict', data, function(data){alert(data)}))
-      // self.showModal(tosimp,chrome.i18n.getMessage("SIMPtitle")+orititle)
-      
-
+      $.ajax({
+        type:'POST',
+        url:'http://127.0.0.1:8999/predict',
+        data: {'str':tosimp},
+        success: function (data) {
+          self.showModal(data.result,chrome.i18n.getMessage("SIMPtitle")+orititle)
+        },
+        error: function(error){
+            self.showModal(error, "ERROR: Simplication Process Failed")
+        }
+      })
     },
 
     showHelpTip: function () {

@@ -33,7 +33,7 @@ body.ov-hidden {
 }
 
 body.chinese-article {
-    font-family: "楷体_GB2312", "仿宋_GB2312", "宋体";
+    font-family: "等线","微软雅黑","楷体_GB2312", "仿宋_GB2312", "宋体";
 }
 
 a:visited, a:link {
@@ -110,7 +110,8 @@ a:hover {
 }
 
 .jz-title {
-    font-size: 24px;
+    font-size: 28px;
+    font-family: 'Times New Roman','等线',tahoma;
     font-weight: bold;
     margin: 12px 0 20px 0;
     text-align: center;
@@ -118,7 +119,7 @@ a:hover {
 
 .jz-subtitle {
     text-align: right;
-    font-size: 12px;
+    font-size: 20px;
     margin-top: -20px;
 }
 
@@ -140,7 +141,9 @@ a:hover {
 }
 
 .jz-article {
-    padding-bottom: 30px;
+    font-size: 20px;
+    padding-bottom: 25px;
+    font-family: 'Times New Roman','等线','微软雅黑',tahoma;
     word-wrap: break-word;
     overflow: hidden;
 }
@@ -162,7 +165,7 @@ a:hover {
 
 .jz-stitle {
     font-size: 12px;
-    font-family: tahoma;
+    font-family: 'Times New Roman','等线',tahoma;
     padding: 2px 4px;
     background-color: rgba(204, 204, 204, 0.53);
     margin: 36px 0 12px;
